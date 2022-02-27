@@ -1,0 +1,49 @@
+reset;
+shell ("del " & ("opti_flag.txt"));
+printf "0">>("opti_flag.txt");
+close ("opti_flag.txt");
+
+model NLP3.mod;
+include ig.INIVAL;
+option solver ipopt;
+solve;
+
+if match (solve_message, "Optimal") > 0 then {
+	printf "1">>("opti_flag.txt");
+} else {
+	printf "0">>("opti_flag.txt");
+}
+close ("opti_flag.txt");
+
+shell ("del " & ("x.txt"));
+shell ("del " & ("y.txt"));
+shell ("del " & ("theta.txt"));
+shell ("del " & ("v.txt"));
+shell ("del " & ("a.txt"));
+shell ("del " & ("phy.txt"));
+shell ("del " & ("w.txt"));
+
+for {i in {1..Nfe}} {
+	printf "%5.6f;", x[i]>>("x.txt");
+	printf "%5.6f;", y[i]>>("y.txt");
+	printf "%5.6f;", theta[i]>>("theta.txt");
+	printf "%5.6f;", v[i]>>("v.txt");
+	printf "%5.6f;", a[i]>>("a.txt");
+	printf "%5.6f;", phy[i]>>("phy.txt");
+	printf "%5.6f;", w[i]>>("w.txt");
+}
+close ("x.txt");
+close ("y.txt");
+close ("theta.txt");
+close ("v.txt");
+close ("a.txt");
+close ("phy.txt");
+
+shell ("del " & ("terminal_time.txt"));
+printf "%5.6f;", tf >> ("terminal_time.txt");
+close ("terminal_time.txt");
+
+shell ("del " & ("infeasibility.txt"));
+printf "%5.10f;", 0>>("infeasibility.txt");
+close ("infeasibility.txt");
+
