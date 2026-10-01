@@ -1,0 +1,13 @@
+{
+  "status": "fail_safe_evasion_or_deadline",
+  "case_id": 1,
+  "completed": 0,
+  "valid_count": 0,
+  "selected_pair": [0, 0],
+  "remaining_time": 2.6999999999999669,
+  "join_error": 0,
+  "dynamics_error": 0,
+  "bound_violation": 0,
+  "collision_free": true,
+  "wall_seconds": 1.2225550000000001
+}

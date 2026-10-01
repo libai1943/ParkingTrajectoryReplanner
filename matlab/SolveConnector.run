@@ -1,0 +1,11 @@
+reset;
+model Connector.mod;
+include InitialGuess.run;
+option solver ipopt;
+solve;
+printf "%d\n", solve_result_num > "status.txt";
+close "status.txt";
+if solve_result_num >= 0 and solve_result_num < 100 then {
+    printf {i in 1..Nfe} "%.17g %.17g %.17g %.17g %.17g %.17g %.17g %.17g\n", (i-1)*tf/(Nfe-1),x[i],y[i],theta[i],v[i],a[i],phy[i],w[i] > "solution.txt";
+    close "solution.txt";
+}

@@ -1,0 +1,8 @@
+Required Notice: Copyright 2022-2026 Bai Li. https://github.com/libai1943/ParkingTrajectoryReplanner
+Required Notice: Chapter 7 companion code for the Chinese-language book 非结构化场景自动驾驶轨迹规划技术 (English title translation: Trajectory Planning Techniques for Autonomous Driving in Unstructured Environments).
+Required Notice: Research using this implementation should cite Bai Li, Zhuyan Yin, Yakun Ouyang, Youmin Zhang, Xiang Zhong, and Shiqi Tang, Online Trajectory Replanning for Sudden Environmental Changes During Automated Parking: A Parallel Stitching Method, IEEE Transactions on Intelligent Vehicles 7(3), 748-757, 2022, DOI:10.1109/TIV.2022.3156429.
+
+This release is offered under PolyForm Noncommercial 1.0.0. See LICENSE.
+Commercial use requires a separate license from the author.
+The MATLAB P-code and project-owned native backend are included in this license.
+External dependencies retain their own licenses.

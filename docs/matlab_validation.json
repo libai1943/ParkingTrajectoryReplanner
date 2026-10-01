@@ -1,0 +1,29 @@
+{
+  "case_id": 1,
+  "selected_pair": [
+    5,
+    6
+  ],
+  "remaining_time": 13.923577705054905,
+  "wall_seconds": 7.4671891,
+  "statistics": {
+    "attempted": 30,
+    "completed": 30,
+    "solver_success": 22,
+    "timed_out": false,
+    "workers": 4
+  },
+  "collision_free_candidates": 19,
+  "validation": {
+    "join_error": 0,
+    "dynamics_error": 2.8661278832914361E-8,
+    "bound_violation": 0,
+    "collision_free": true,
+    "minimum_join_speed": 2.5954529638662898,
+    "time_increasing": true,
+    "final_pose_error": 0,
+    "passed": true
+  },
+  "pcode_only": true,
+  "figure_count": 2
+}

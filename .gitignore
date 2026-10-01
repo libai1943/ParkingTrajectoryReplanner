@@ -1,0 +1,21 @@
+# Local solver installations, outputs and build products
+*.exe
+*.dll
+!native/win64/parking_backend.dll
+*.mp4
+*.avi
+*.asv
+*.log
+matlab/RunData/*
+!matlab/RunData/.gitkeep
+python/results/
+cpp/results/
+build*/
+.venv/
+__pycache__/
+*.pyc
+# Protected implementation sources are never publication inputs
+matlab/ParkingBackend.m
+matlab/StitchingVisualization.m
+private_sources/
+parking_engine.cpp

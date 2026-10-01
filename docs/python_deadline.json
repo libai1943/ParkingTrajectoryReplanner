@@ -1,0 +1,14 @@
+{
+  "case_id": 1,
+  "t0": 2.8165,
+  "t1": 6.2755703624733465,
+  "tbrake": 4.774237739872068,
+  "workers": 4,
+  "enforce_deadline": true,
+  "completed": 0,
+  "valid_count": 0,
+  "status": "fail_safe_evasion_or_deadline",
+  "detail": "",
+  "collision_free": true,
+  "wall_seconds": 1.2040306999988388
+}
